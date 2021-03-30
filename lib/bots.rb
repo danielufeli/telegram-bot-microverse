@@ -1,9 +1,53 @@
-require 'telegram/bot'
+# frozen_string_literal: true
 
-# Clas for the Boot
+require 'telegram/bot'
+require_relative 'motive.rb'
+require_relative 'jokes.rb'
+
 class Bot
   def initialize
     token = '1692524393:AAE9cY7Enn8V09VxwogmJQQCIByl78QJ3fw'
-    puts token
+
+    Telegram::Bot::Client.run(token) do |bot|
+      bot.listen do |message|
+        case message.text
+        when '/start'
+
+          bot.api.send_message(
+            chat_id: message.chat.id, text: "Hello, #{message.from.first_name} ,
+            welcome to motivation chat bot created by Daniel Ufeli,
+            the chat bot is to keep you motivated and entertained.
+            Use  /start to start the bot,  /stop to end the bot,
+            /motivate to get a diffrent motivational quote everytime you request
+            for it or /joke to get a joke everytime you request for it"
+          )
+
+        when '/stop'
+
+          bot.api.send_message(chat_id: message.chat.id, text: "Bye,
+            #{message.from.first_name}", date: message.date)
+        when '/motivate'
+          values = Motivate.new
+          value = values.select_random
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: (value['text']).to_s, date: message.date)
+        when '/joke'
+          values = Joke.new
+          value = values.make_the_request
+          bot.api.send_message(
+            chat_id: message.chat.id,
+            text:
+            "Setup: #{value[0]['setup']}\nPunchline: #{value[0]['punchline']}",
+            date: message.date
+          )
+
+        else bot.api.send_message(
+          chat_id: message.chat.id, text: "Invalid entry,
+          #{message.from.first_name}, you need to use  /start,
+           /stop , /motivate or /joke"
+        )
+        end
+      end
+    end
   end
 end

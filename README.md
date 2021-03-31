@@ -15,10 +15,11 @@ To get a local copy up and running follow these simple example steps.
 - Install Ruby in your system. To install Ruby, you can read the [Documentation](https://www.ruby-lang.org/en/documentation/installation/)
 - Go to the main page of the repo.
 - Press the "Code" button and get the repo link.
-- paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]` or download has a Zip file.
+- Paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]` or download has a Zip file.
 - on the CLI, cd TElEGRAM_BOT_MICROVERSE folder
-- run bundle install
-- run `bin/main.rb` to initialize the bot.
+- Rename .env.example to .env and add Telegram Token
+- Run bundle install
+- Run `bin/main.rb` to initialize the bot.
 - Navigate to your telegram account
 
 - On your telegram account search for :

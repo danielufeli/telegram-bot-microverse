@@ -1,11 +1,14 @@
 require 'telegram/bot'
+require 'dotenv'
 require_relative 'motive.rb'
 require_relative 'jokes.rb'
+
+Dotenv.load('./.env')
 
 # Boot Class all bot fuctionality
 class Bot
   def initialize
-    token = '1692524393:AAE9cY7Enn8V09VxwogmJQQCIByl78QJ3fw'
+    token = ENV['TOKEN']
     run(token)
   end
 
@@ -52,7 +55,7 @@ class Bot
   end
 
   def run(token)
-    Telegram::Bot::Client.run(token) do |bot|
+    Telegram::Bot::Client.run(token, logger: Logger.new($stdout)) do |bot|
       bot.listen do |message|
         case message.text
         when '/start' then start(bot, message)

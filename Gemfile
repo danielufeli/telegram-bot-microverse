@@ -1,3 +1,4 @@
+gem 'dotenv', '~>2.7.5'
 gem 'json'
 gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
 gem 'rspec-core'

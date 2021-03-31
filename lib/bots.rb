@@ -4,9 +4,9 @@ require_relative 'jokes.rb'
 
 # Boot Class all bot fuctionality
 class Bot
-  attr_reader :token
   def initialize
-    @token = '1692524393:AAE9cY7Enn8V09VxwogmJQQCIByl78QJ3fw'
+    token = '1692524393:AAE9cY7Enn8V09VxwogmJQQCIByl78QJ3fw'
+    run(token)
   end
 
   def start(bot, message)
@@ -51,8 +51,8 @@ class Bot
     )
   end
 
-  def run
-    Telegram::Bot::Client.run(@token) do |bot|
+  def run(token)
+    Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
         when '/start' then start(bot, message)

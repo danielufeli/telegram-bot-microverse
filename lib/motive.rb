@@ -5,7 +5,7 @@ require_relative 'bots.rb'
 
 # Motivate Class to Get Data from API
 class Motivate
-  @values = nil
+  attr_accessor :values
 
   def initialize
     @values = make_the_request

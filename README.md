@@ -1,4 +1,4 @@
-# tic_tac_toe_project_microverse
+# telegram-bot-microverse
 A Telegram Bot that gives you a daily inspirational quote, and makes jokes for entertainment. It was built purely on ruby programming language.
 
 ## Built With
@@ -14,7 +14,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Go to the main page of the repo.
 - Press the "Code" button and get the repo link.
-- paste the repository link on the like: `git clone [git-address]`
+- paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]`
 - on the CLI, run `bin/main.rb` to initialize the game.
 - Navigate to your telegram account
 
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## How to Test
 
-This game was tested using [RSpec](https://rspec.info/) which is a ruby testing tool. We tested all the public methods of the project Tic Tac Toe.
+This Bot was tested using [RSpec](https://rspec.info/) which is a ruby testing tool. We tested all the public methods of the project.
 
 ### Run the test
 - Open the terminal window and type rspec

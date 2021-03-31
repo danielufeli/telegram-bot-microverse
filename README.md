@@ -1,5 +1,5 @@
 # telegram-bot-microverse
-A Telegram Bot that gives you a daily inspirational quote, and makes jokes for entertainment. it runs on the terminal/command line, which then sends inspirational messages to a specific user on his or her telegram account, It was built purely on ruby programming language.
+A Telegram Bot that gives you a daily inspirational quote, and makes jokes for entertainment. it runs on the terminal/command line, which then sends inspirational messages to a specific user on his or her telegram account, It was built purely on the Ruby programming language.
 
 ## Built With
 

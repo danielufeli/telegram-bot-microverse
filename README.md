@@ -17,7 +17,8 @@ To get a local copy up and running follow these simple example steps.
 - Press the "Code" button and get the repo link.
 - paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]` or download has a Zip file.
 - on the CLI, cd TElEGRAM_BOT_MICROVERSE folder
-- and run `bin/main.rb` to initialize the bot.
+- run bundle install
+- run `bin/main.rb` to initialize the bot.
 - Navigate to your telegram account
 
 - On your telegram account search for :

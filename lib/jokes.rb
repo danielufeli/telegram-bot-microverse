@@ -5,8 +5,6 @@ require_relative 'bots.rb'
 
 # Jokes Class to Get Data from API
 class Joke
-  attr_accessor :values
-
   def initialize
     @values = @make_the_request
   end

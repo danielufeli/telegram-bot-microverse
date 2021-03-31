@@ -1,5 +1,5 @@
 # telegram-bot-microverse
-A Telegram Bot that gives you a daily inspirational quote, and makes jokes for entertainment. It was built purely on ruby programming language.
+A Telegram Bot that gives you a daily inspirational quote, and makes jokes for entertainment. it runs on the terminal/command line, which then sends inspirational messages to a specific user on his or her telegram account, It was built purely on ruby programming language.
 
 ## Built With
 
@@ -12,10 +12,12 @@ A Telegram Bot that gives you a daily inspirational quote, and makes jokes for e
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
+- Install Ruby in your system. To install Ruby, you can read the [Documentation](https://www.ruby-lang.org/en/documentation/installation/)
 - Go to the main page of the repo.
 - Press the "Code" button and get the repo link.
-- paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]`
-- on the CLI, run `bin/main.rb` to initialize the bot.
+- paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]` or download has a Zip file.
+- on the CLI, cd TElEGRAM_BOT_MICROVERSE folder
+- and run `bin/main.rb` to initialize the bot.
 - Navigate to your telegram account
 
 - On your telegram account search for :

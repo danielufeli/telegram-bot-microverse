@@ -15,7 +15,7 @@ To get a local copy up and running follow these simple example steps.
 - Go to the main page of the repo.
 - Press the "Code" button and get the repo link.
 - paste the repository link on the like: `git clone [https://github.com/danielufeli/telegram-bot-microverse.git]`
-- on the CLI, run `bin/main.rb` to initialize the game.
+- on the CLI, run `bin/main.rb` to initialize the bot.
 - Navigate to your telegram account
 
 - On your telegram account search for :

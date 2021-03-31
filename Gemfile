@@ -1,6 +1,6 @@
 gem 'json'
 gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
+gem 'rspec-core'
 gem 'rubocop', '~>0.81.0'
 gem 'telegram-bot-ruby'
-gem 'rspec-core'
 source 'https://rubygems.org'
